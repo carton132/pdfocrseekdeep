@@ -108,6 +108,7 @@ def process_image(image, mode="document", resolution="base", page_number=None):
                 ocr_model.tokenizer,
                 prompt=prompt,
                 image_file=temp_path,
+                output_path="/tmp",
                 base_size=res["base_size"],
                 image_size=res["image_size"],
                 crop_mode=True,
